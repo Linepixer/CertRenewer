@@ -1,0 +1,14 @@
+[Unit]
+Description=CertRenewer
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+WorkingDirectory=/home/diazmatias/CertRenewer
+ExecStart=docker-compose up -d
+ExecStop=docker-compose down
+
+[Install]
+WantedBy=multi-user.target
