@@ -1,6 +1,7 @@
 services:
   certrenewer:
     image: linepixer/cert_renewer:latest
+    restart: on-failure
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
     environment:
