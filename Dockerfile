@@ -8,7 +8,6 @@ WORKDIR /app
 
 # Copiar software principal
 COPY main.py /app/main.py
-COPY espera.py /app/espera.py
 
 # Ejecucion de la aplicacion
-ENTRYPOINT ["python3", "/app/espera.py"]
+ENTRYPOINT ["python3", "/app/main.py"]
