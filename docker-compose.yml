@@ -1,6 +1,6 @@
 services:
   certrenewer:
-    image: certrenewer
+    image: linepixer/cert_renewer:latest
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
     environment:
