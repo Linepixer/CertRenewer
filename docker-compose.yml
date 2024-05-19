@@ -1,0 +1,7 @@
+services:
+  certrenewer:
+    image: certrenewer
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
+    environment:
+      - API_KEY=
