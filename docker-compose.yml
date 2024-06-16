@@ -1,6 +1,7 @@
 services:
   certrenewer:
     image: linepixer/cert_renewer:latest
+    container_name: certrenewer
     restart: on-failure
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
